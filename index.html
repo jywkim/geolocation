@@ -51,7 +51,7 @@
         display:flex;
         align-items: center;
       }
-
+upd
       .units {
         font-size: 15px;
       }
@@ -65,6 +65,8 @@
         console.log(data);
         speed.textContent = data.coords.speed;
         arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+      }, (err) => {
+        console.error(err);
       });
     </script>
   </body>
